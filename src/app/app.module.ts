@@ -6,13 +6,25 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { BannerComponent } from './banner/banner.component';
 import { PopularComponent } from './popular/popular.component';
+import { DishesComponent } from './dishes/dishes.component';
+import { AboutComponent } from './about/about.component';
+import { MenuComponent } from './menu/menu.component';
+import { ReviewComponent } from './review/review.component';
+import { OrderComponent } from './order/order.component';
+import { FooterComponent } from './layout/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     BannerComponent,
-    PopularComponent
+    PopularComponent,
+    DishesComponent,
+    AboutComponent,
+    MenuComponent,
+    ReviewComponent,
+    OrderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

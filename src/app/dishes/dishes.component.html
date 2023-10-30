@@ -1,0 +1,17 @@
+<section class="dishes" id="dishes">
+    <h3 class="sub-heading">Our Dishes</h3>
+    <h1 class="heading">Popular Dishes</h1>
+    <div class="box-container">
+        <div class="box" *ngFor="let item of list">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+            <img [src]="item.image" alt="">
+            <h3>{{ item.title }}</h3>
+            <div class="stars">
+                <i class="fas fa-star" *ngFor="let _ of [1, 2, 3, 4, 5]"></i>
+            </div>
+            <span>{{ '$' + item.price }}</span>
+            <a class="btn" (click)="addToCart(item)">Add to Cart</a>
+        </div>
+    </div>
+</section>

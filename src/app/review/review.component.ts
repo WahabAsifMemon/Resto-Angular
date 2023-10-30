@@ -1,15 +1,16 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { Component } from '@angular/core';
 import Swiper from 'swiper';
 
+
 @Component({
-  selector: 'app-banner',
-  templateUrl: './banner.component.html',
-  styleUrls: ['./banner.component.scss']
+  selector: 'app-review',
+  templateUrl: './review.component.html',
+  styleUrls: ['./review.component.scss']
 })
-export class BannerComponent implements AfterViewInit {
+export class ReviewComponent {
 
   ngAfterViewInit() {
-    const swiper = new Swiper(".home-slider", {
+    const swiper = new Swiper(".review-slider", {
       spaceBetween: 30,
       centeredSlides: true,
       autoplay: {
